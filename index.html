@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" ng-app="myApp">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
 </head>
 
-<body ng-app="BlankApp" ng-cloak>
+<body ng-controller="mainController" ng-cloak>
 
     <div layout="row">
         <div flex>
@@ -24,7 +24,7 @@
     </div>
     <div layout="row">
         <div flex>
-            <md-button class="md-cornered md-raised">Submit</md-button>
+            <md-button class="md-cornered md-raised" ng-click="sendForm()">Submit</md-button>
         </div>
         <div flex>
             <md-slider md-discrete ng-model="myDiscreteValue" step="0.5" min="0" max="10">
