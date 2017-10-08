@@ -9,6 +9,7 @@ myApp.controller('mainController', ['$scope', function($scope) {
       console.log($event);
       newTodo = angular.copy($scope.todo);
       $scope.todos.push(newTodo);
+      $scope.todo = {};
   }
 
   $scope.todos = [
